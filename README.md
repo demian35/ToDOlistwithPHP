@@ -86,7 +86,7 @@ Si estas usando VS code puedes usar la extencion PHP server para montar el servi
 ## Expresiones de Gratitud 🎁
 
 - Comenta a otros sobre este proyecto 📢
-- Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
+- Invita una cerveza 🍺 o un café ☕ al desarrollador.
 - 10/10 al proyecto 💯
 
 
