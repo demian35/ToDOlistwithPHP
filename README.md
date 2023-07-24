@@ -35,6 +35,13 @@ Se requiere PhP 8.0.29 para arriba
 Tener habiltada la extension de PHP PDO para MySQL
 Manejador de Base de Datos relacional MySQL 8.0
 
+Crear la base de datos basededatospracticapdo y en ella la tabla tareas con las sentencias "CREATE DATABASE basededatospracticapdo;". 
+Y despues crear la tabla con la siguiente sentencia "CREATE TABLE tareas(
+        idtareas INT(100) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        tarea VARCHAR(300) NOT NULL
+        
+);".
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
