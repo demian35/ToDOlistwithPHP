@@ -1,3 +1,7 @@
+<?php
+include("controladorToDO.php") 
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,13 +27,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        
-                        <tr class="">
-                            <td>  </td>
-                            <td></td>
+                        <?php foreach($resultados as $tarea){ ?>
+                        <tr class="tabla-resultados">
+                            <td> <?php echo $tarea[0] ?> </td>
+                            <td> <?php echo $tarea[1] ?> </td>
                             <td><a name="" id="" class="btn btn-danger" href="" role="button">Borrar</a></td>
                         </tr>
-                       
+                        <?php } ?>
                     </tbody>
                 </table>
 
