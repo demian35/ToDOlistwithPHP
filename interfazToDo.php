@@ -11,6 +11,10 @@ include("controladorToDO.php")
     <title>To Do list</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
+        
+        html{
+            background-color: yellow;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 20px;
@@ -18,6 +22,7 @@ include("controladorToDO.php")
 
         .formularioTareas {
             margin-bottom: 20px;
+            background-color: yellow;
         }
 
         .campotarea {
@@ -30,10 +35,11 @@ include("controladorToDO.php")
         .tabla {
             width: 100%;
             border-collapse: collapse;
+            background-color: yellow;
         }
 
-        .tabla th,
-        .tabla td {
+        
+        .tabla th, .tabla td {
             padding: 10px;
             text-align: left;
             border-bottom: 1px solid #ccc;
@@ -41,6 +47,7 @@ include("controladorToDO.php")
 
         .tabla th {
             background-color: #f2f2f2;
+            
         }
 
         .tabla-resultados:hover {
