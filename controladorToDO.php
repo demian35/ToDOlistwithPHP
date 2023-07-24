@@ -1,8 +1,8 @@
 <?php
 
-$server="localhost";//nombre del server
-$usuario="root";//Usuario
-$password="root";//contraseña
+$server="";//nombre del server
+$usuario="";//Usuario
+$password="";//contraseña
 $baseDeDatos="basededatospracticapdo";//nombre de la base de datos en donde trabajaremos
 
 //creamos la conexion 
