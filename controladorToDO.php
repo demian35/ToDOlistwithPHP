@@ -12,7 +12,6 @@ $coneccion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);//manejo de e
 //recepcion de datos
 if($_POST){
     
-    print_r($_POST);
     $sentencia=$coneccion->prepare("INSERT INTO tareas(idtareas,tarea) VALUES(NULL, :tarea)");//preparamos la insercion
     $sentencia->bindParam(':tarea', $tarea);//recibimos los datos enviados del form
     $tarea=$_POST['tarea']; //variable a la que hace referencia :tarea
@@ -21,6 +20,16 @@ if($_POST){
     header("Location:?");//redireccionamos para que no se ejecute la insercion al actualizar la pagina
 }
 
+//Lectura de datos
+if($_GET){
+    
+    $sentencia=$coneccion->prepare("DELETE FROM tareas WHERE idtareas=:id");
+    $sentencia->bindParam(':id',$deleteElem);//le pasamos a la sentencia el dato que queremos borrar
+    $deleteElem=$_GET["borrar"];//obtenemos el dato que queremos borrar (id)
+    $sentencia->execute();//ejecutamos la sentencia
+    header("Location:?");//redireccionamos para que al actualizar no vuelva a ejecutar la eliminacion
+
+}
 
 $sentencia=$coneccion->prepare("SELECT * FROM tareas");//consultamos lo que hay en la base de datos
 $sentencia->execute();//ejecutamos la sentenica

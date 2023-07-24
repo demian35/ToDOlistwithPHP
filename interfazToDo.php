@@ -31,7 +31,7 @@ include("controladorToDO.php")
                         <tr class="tabla-resultados">
                             <td> <?php echo $tarea[0] ?> </td>
                             <td> <?php echo $tarea[1] ?> </td>
-                            <td><a name="" id="" class="btn btn-danger" href="" role="button">Borrar</a></td>
+                            <td><a name="" id="" class="btn btn-danger" href="?borrar=<?php echo $tarea[0]; ?>" role="button">Borrar</a></td>
                         </tr>
                         <?php } ?>
                     </tbody>
